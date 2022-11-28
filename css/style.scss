@@ -193,7 +193,7 @@ html {
 @media screen and (max-width: 768px) {
   main {
     #background-img-section {
-      height: 200px;
+      height: 300px;
       margin-top: 70px;
       background-image: url("../img/bg-img.jpg");
       background-repeat: no-repeat;
@@ -208,19 +208,21 @@ html {
         text-align: center;
 
         h1 {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           color: white;
         }
         h2 {
           margin-top: 1rem;
-          font-size: 1.2rem;
+          font-size: 1.6rem;
           font-weight: bolder;
           color: white;
         }
         h3 {
           margin-top: 1rem;
           a {
-            font-size: 1rem;
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 1.5rem;
             color: white;
           }
         }
