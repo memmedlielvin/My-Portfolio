@@ -1,112 +1,171 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="content-type" content="text/html">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/js">
+    <meta http-equiv="content-language" content="EN">
+    <meta name="refresh" content="30">
+    <meta name="resourche-type" content="document">
+    <meta name="document-state" content="dynamic">
+    <meta name="author" content="Memmedli Elvin">
+    <meta name="copyright" content="Elik Mamed">
+    <meta name="description" content="Elik Mamed FrD. My name is Elvin. I am a Front-End developer and computer programmer. I am a specialize in website design.">
+    <meta name="keywords" content="developer, front-end, programmers, web, design, proqramist, web, sayt, proqramçı" lang="az" >
+   <meta name="revisit" content="10">
+   <meta name="robots" content="all">
+   
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
-    <!--<link rel="stylesheet" href="css/mobil.css">-->
-    <title>Elik Mamed</title>
+    <script src="main.js/main.js"></script>
+    
+    <link rel="icon" href="img/icon-for-head-title.png">
+    
+    <title>Elik Mamed FrD</title>
 </head>
 
 <body>
 
-    <header id="header-for-mobil">
-        <div>
-            <a href="#" target="_self">Elik Mamed FrD</a>
-            <i class="fa-solid fa-bars" onClick="openNavBar();"></i>
-            <i class="fa-solid fa-xmark" onClick=closeNavBar();></i>
-        </div>
+    
+<main>
+    <header id="head-for-mobil">
+        <a href="index.html">Elik Mamed FrD</a>
+        <i class="fa-solid fa-bars" onClick="openNavBar();"></i>
+    </header>
 
+    <nav id="nav-for-mobil">
+        
 
-        <ul id="openNav">
-            <li><a href="#" target="_self">Elik Mamed FrD</a></li>
-            <li><a href="#" target="_self">About me</a></li>
-            <li><a href="#" target="_self">Resume</a></li>
-            <li><a href="#" target="_self">Projects</a></li>
-            <li><a href="#" target="_self">Contact</a></li>
+        <div><i class="fa-solid fa-xmark" onClick=closeNavBar();></i></div>
+
+        <ul>
+            
+            <li><a onclick="closeNavBarForChange();" href="#about">About</a></li>
+            <li><a onclick="closeNavBarForChange();" href="#publications">Publications</a></li>
+            <li><a onclick="closeNavBarForChange();" href="#research-blog">Research Blog</a></li>
+            <li><a onclick="closeNavBarForChange();" href="#contact">Contact</a></li>
 
         </ul>
 
+    </nav>
+
+    <header id="head-for-pc">
+        <h1><a href="index.html">Elik Mamed FrD</a></h1>
+        <ul>
+            
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research-blog">Research Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+
+
     </header>
+    
 
-    <div id="background-div"></div>
-    <div id="background-div2">
-        <h3>Daily Music</h3>
-        <audio controls autoplay loop> 
-            <source src="music/silencio.mp3" ></source>
-        </audio>
-    </div>
 
-    <div id="absolute-section">
+    <section id="background-img-section">
+        <div>
+            <h1>Elvin Memmedli FrD</h1>
+            <h2>Front-End Developer</h2>
+            <h3>
+                <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.gmail.com"><i class="fa-solid fa-at"></i></a>
+            </h3>
+        </div>
+    </section>
+    <section id="first-section">
+        <img src="img/profile-picture.jpeg" alt="image">
 
-        <article>
-            <div><img src="img/6.jpg" alt="elikphoto"></img><span class="image-over"></span></div>
+        <div>
+                
+            <h4 id="about">
+                I'm a Front-end developer. My name is Elvin. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, reprehenderit est ratione nobis pariatur porro dolores. Necessitatibus, ab quos! Reiciendis consectetur hic modi quidem nesciunt quae inventore
+                amet commodi accusamus!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus nemo, rerum cumque iste fuga delectus!
+            </h4>
 
+            <p class="about"><a href="#learn-more">About me</a></p>
 
             <div>
-                <h1>Elvin Memmedli FrD</h1>
-                <h2>Front-End Developer</h2>
-                <h3>
-                    <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                    <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                    <a target="_blank" href="https://www.gmail.com"><i class="fa-solid fa-at"></i></a>
-                </h3>
-                <p>
-                    I'm a Front-end developer. My name is Elvin. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, reprehenderit est ratione nobis pariatur porro dolores. Necessitatibus, ab quos! Reiciendis consectetur hic modi quidem nesciunt quae inventore
-                    amet commodi accusamus!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus nemo, rerum cumque iste fuga delectus!
-                </p>
-
-                <p class="about"><a href="#">About me</a></p>
+                <h3>Daily Music</h3>
+               
+                    <audio controls autoplay loop> 
+                    
+                    <source src="music/silencio.mp3" ></source>
+                </audio>
             </div>
-
-        </article>
-
-
-    </div>
-
-
-
-
-
-    <section>
-
-        <div>
-            <h1>Research Interests</h1>
         </div>
-
-        <div>
-            <p>
-
-
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
-                you to tell a story and let your users know a little more about you.<br><br> ​ This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about
-                your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show
-                your visitors who you are.
-
-            </p>
-
-            <p class="learn-more"><a href="#">Learn More</a></p>
-
-        </div>
-
+        
+        
     </section>
 
 
-    <footer>
+    <section id="research-blog">
 
+        
+            <h1>Research <br>
+                Interests</h1>
+        
+
+    <div>
+        <h4 id="learn-more">
+
+
+            I'm a Front-end developer. My name is Elvin. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
+            you to tell a story and let your users know a little more about you.<br><br> ​ This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about
+            your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show
+            your visitors who you are.
+
+        </h4>
+
+        <a href="#about">Learn More</a>
+    
+    </div>
+
+        
+
+    </section>
+
+<section id="publications">
+
+    <h1>Publications</h1>
+
+    <div>
+       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
+       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
+       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
+
+        <a href="#learn-more">View all publications</a>
+    
+    </div>
+</section>
+
+
+
+
+    <footer id="contact">
 
         <div>
             <h1>Contact Information</h1>
-            <h3>Developia Company<br> Ayaz Ismayilov 35C</h3>
+            <h3>Elik Company</h3>
+            <h5>500 Terry Francois St. <br>San Francisco, CA 94158</h5>
 
-            <p><a href="tel:+994506474653">+994506474653</a><br>
-                <a href="mailto:memmedlielvin029@gmail.com">memmedlielvin029@gmail.com</a>
-            </p>
-            <p class="footer-pfirst">
+            <h5>
+                <a href="tel:+994506474653">+994506474653</a><br>
+                <a href="mailto:info@elik.com">info@elik.com</a>
+            </h5>
+            <p >
                 <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                 <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
                 <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
@@ -116,70 +175,46 @@
         </div>
 
 
-        <div>
-            <form>
-                <p>
-                    <span><label>First Name</label><br><input type="text" name="text" id="text"></span>
-                    <span><label>Last Name</label><br><input type="text" name="text" id="text"></span>
-                </p>
+        
+            <form action="#" method="post" autocomplete="off">
+                <div>
+                    <p>
+                        <label for="first-name">First Name</label><br>
+                        <input type="text" name="first-name" id="first-name" >
+                    </p>
+                    <p>
+                        <label for="last-name">Last Name</label><br>
+                        <input type="text" name="last-name" id="last-name" >
+                    </p>
+                </div>
 
 
-                <p>
-                    <span><label>E-mail</label><br><input type="email" name="email" id="email"></span>
-                    <span><label>Tel: </label><br><input type="tel" name="tel" id="tel"></span>
-                </p>
+                <div>
+                    <p><label for="email"e>E-mail</label><br>
+                        <input type="email" name="email" id="email" ></p>
+                    <p><label for="tel">Tel: </label><br>
+                        <input type="tel" name="tel" id="tel" ></p>
+                </div>
 
-                <p><label for="textarea">Leave a message</label><br>
-                    <textarea id="textarea"></textarea></p>
+                <div id="textarea-container">
+                    <label for="textarea">Leave a message</label><br>
+                        <textarea id="textarea" ></textarea>
+                </div>
 
-                <p><input type="submit" name="submit" id="submit"></p>
+                <div>
+                    <input type="submit" name="submit" id="submit">
+                </div>
 
 
 
 
             </form>
-
-
-
-
-        </div>
-
-
-
     </footer>
+</main>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        function openNavBar() {
-
-            document.getElementsByClassName("fa-xmark").style.display = "block";
-            document.getElementsByClassName("fa-bars").style.display = "none";
-            document.getElementById("openNav").style.display = "block";
-        }
-
-        function closeNavBar() {
-
-            document.getElementsByClassName("fa-xmark").style.display = "none";
-            document.getElementsByClassName("fa-bars").style.display = "block";
-            document.getElementById("openNav").style.display = "none";
-
-
-        }
-    </script>
 
 </body>
 

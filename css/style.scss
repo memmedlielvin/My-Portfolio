@@ -1,0 +1,353 @@
+@import "headFoot.scss";
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    #background-img-section {
+      height: 300px;
+      margin-top: 70px;
+      background-image: url("../img/bg-img.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      & > div {
+        width: 40%;
+
+        margin-right: 5rem;
+        margin-bottom: 1rem;
+        h1 {
+          font-size: 3rem;
+          color: white;
+        }
+        h2 {
+          margin-top: 1rem;
+          font-size: 2rem;
+          font-weight: bolder;
+          color: white;
+        }
+        h3 {
+          margin-top: 1rem;
+          a {
+            font-size: 1.5rem;
+            color: white;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    #first-section {
+      display: flex;
+      justify-content: end;
+      align-items: start;
+      padding: 1rem;
+      position: relative;
+      img {
+        width: 400px;
+        position: absolute;
+        top: -200px;
+        left: 10%;
+        box-shadow: 0 0 10px #472915;
+      }
+      & > div {
+        width: 40%;
+        margin-right: 5rem;
+        h4 {
+          scroll-margin-top: 100px;
+          width: 80%;
+          line-height: 1.5rem;
+          font-weight: normal;
+          letter-spacing: 1px;
+          text-align: justify;
+        }
+        p {
+          margin-top: 2rem;
+          a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #472915;
+            border: 1px solid #472915;
+            transition: all 0.6s;
+            &:hover {
+              background-color: #472915;
+              color: wheat;
+            }
+          }
+        }
+
+        & > div {
+          margin-top: 2rem;
+          h3 {
+            color: #472915;
+          }
+          audio {
+            margin-top: 1rem;
+            border: 1px solid #472915;
+            border-radius: 100px;
+            box-shadow: 0 0 5px #472915;
+          }
+        }
+      }
+    }
+
+    #research-blog {
+      scroll-margin-top: 70px;
+      background-color: #f2ede9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      h1 {
+        width: 50%;
+        text-align: center;
+        font-size: 5rem;
+        color: #472915;
+        font-weight: lighter;
+      }
+      & > div {
+        width: 50%;
+        h4 {
+          scroll-margin-top: 80px;
+          width: 70%;
+          font-weight: normal;
+          line-height: 2rem;
+          color: #464443;
+          text-align: justify;
+        }
+        a {
+          display: inline-block;
+          padding: 10px 25px;
+          margin-top: 2rem;
+          color: #472915;
+          background-color: transparent;
+          border: 1px solid #472915;
+          transition: all 0.6s;
+          &:hover {
+            background-color: #472915;
+            color: white;
+          }
+        }
+      }
+    }
+
+    #publications {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 1rem;
+      scroll-margin-top: 70px;
+      h1 {
+        width: 50%;
+        text-align: center;
+        font-size: 5rem;
+        color: #472915;
+        font-weight: lighter;
+      }
+      & > div {
+        width: 50%;
+        p {
+          line-height: 2rem;
+          color: #464443;
+          margin-top: 5rem;
+          font-size: 1.5rem;
+        }
+        a {
+          display: inline-block;
+          padding: 10px 25px;
+          margin-top: 5rem;
+          color: #472915;
+          background-color: transparent;
+          border: 1px solid #472915;
+          transition: all 0.6s;
+          &:hover {
+            background-color: #472915;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    #background-img-section {
+      height: 200px;
+      margin-top: 70px;
+      background-image: url("../img/bg-img.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > div {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+          font-size: 1.5rem;
+          color: white;
+        }
+        h2 {
+          margin-top: 1rem;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          color: white;
+        }
+        h3 {
+          margin-top: 1rem;
+          a {
+            font-size: 1rem;
+            color: white;
+          }
+        }
+      }
+    }
+
+    #first-section {
+      margin-top: 1rem;
+      padding: 1rem;
+      img {
+        width: 100%;
+        box-shadow: 0 0 10px #472915;
+      }
+      & > div {
+        width: 100%;
+        margin-top: 1rem;
+
+        h4 {
+          scroll-margin-top: 100px;
+          width: 100%;
+          line-height: 1.5rem;
+          font-weight: normal;
+          letter-spacing: 1px;
+          text-align: justify;
+        }
+        p {
+          margin-top: 2rem;
+          text-align: center;
+          a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #472915;
+            color: wheat;
+            transition: all 0.6s;
+          }
+        }
+
+        & > div {
+          text-align: center;
+          margin-top: 2rem;
+          h3 {
+            color: #472915;
+          }
+          audio {
+            width: 90%;
+            margin: auto;
+            margin-top: 1rem;
+            border: 1px solid #472915;
+            border-radius: 100px;
+            box-shadow: 0 0 5px #472915;
+          }
+        }
+      }
+    }
+
+    #research-blog {
+      background-color: #f2ede9;
+
+      padding: 2rem 1rem;
+      scroll-margin-top: 70px;
+      h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: #472915;
+        font-weight: bold;
+      }
+      & > div {
+        width: 100%;
+        text-align: center;
+        h4 {
+          scroll-margin-top: 80px;
+          margin-top: 1rem;
+          width: 100%;
+          font-weight: normal;
+          line-height: 1.5rem;
+          color: #464443;
+          text-align: justify;
+        }
+        a {
+          display: inline-block;
+          padding: 10px 25px;
+          margin-top: 2rem;
+          color: #472915;
+          background-color: transparent;
+          border: 1px solid #472915;
+          transition: all 0.6s;
+          &:hover {
+            background-color: #472915;
+            color: white;
+          }
+        }
+      }
+    }
+
+    #publications {
+      padding: 1rem;
+      scroll-margin-top: 70px;
+      h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: #472915;
+        font-weight: bold;
+      }
+      & > div {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        p {
+          line-height: 1.5rem;
+          color: #464443;
+          margin-top: 1rem;
+          font-size: 1.2rem;
+        }
+        a {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 2rem;
+          background-color: #472915;
+          color: white;
+        }
+      }
+    }
+
+    #contact {
+      scroll-margin-top: 70px;
+    }
+  }
+}
