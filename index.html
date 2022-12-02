@@ -181,8 +181,8 @@
             <form action="#" method="post" autocomplete="off">
                 <div>
                     <p>
-                        <label for="first-name">First Name</label><br>
-                        <input type="text" name="first-name" id="first-name" >
+                        <label for="first-name">First Name <span style="color: red;"> *</span></label><br>
+                        <input type="text" name="first-name" id="first-name" required>
                     </p>
                     <p>
                         <label for="last-name">Last Name</label><br>
@@ -192,10 +192,10 @@
 
 
                 <div>
-                    <p><label for="email"e>E-mail</label><br>
-                        <input type="email" name="email" id="email" ></p>
-                    <p><label for="tel">Tel: </label><br>
-                        <input type="tel" name="tel" id="tel" ></p>
+                    <p><label for="email"e>E-mail <span style="color: red;"> *</span></label><br>
+                        <input type="email" name="email" id="email" required></p>
+                    <p><label for="tel">Tel: <span style="color: red;"> *</span></label><br>
+                        <input type="tel" name="tel" id="tel" required></p>
                 </div>
 
                 <div id="textarea-container">
