@@ -57,12 +57,13 @@ html {
       }
     }
 
-    #first-section {
+    #home {
       display: flex;
       justify-content: end;
       align-items: start;
       padding: 1rem;
       position: relative;
+
       img {
         width: 400px;
         position: absolute;
@@ -111,7 +112,7 @@ html {
       }
     }
 
-    #research-blog {
+    #aboutMe {
       scroll-margin-top: 70px;
       background-color: #f2ede9;
       display: flex;
@@ -151,7 +152,7 @@ html {
       }
     }
 
-    #publications {
+    #projects {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -229,9 +230,10 @@ html {
       }
     }
 
-    #first-section {
+    #home {
       margin-top: 1rem;
       padding: 1rem;
+
       img {
         width: 100%;
         box-shadow: 0 0 10px #472915;
@@ -278,7 +280,7 @@ html {
       }
     }
 
-    #research-blog {
+    #aboutMe {
       background-color: #f2ede9;
 
       padding: 2rem 1rem;
@@ -318,7 +320,7 @@ html {
       }
     }
 
-    #publications {
+    #projects {
       padding: 1rem;
       scroll-margin-top: 70px;
       h1 {

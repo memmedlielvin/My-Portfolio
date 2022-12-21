@@ -659,25 +659,25 @@ html {
     color: white;
     margin-right: 1rem;
   }
-  main #first-section {
+  main #home {
     display: flex;
     justify-content: end;
     align-items: start;
     padding: 1rem;
     position: relative;
   }
-  main #first-section img {
+  main #home img {
     width: 400px;
     position: absolute;
     top: -200px;
     left: 10%;
     box-shadow: 0 0 10px #472915;
   }
-  main #first-section > div {
+  main #home > div {
     width: 40%;
     margin-right: 5rem;
   }
-  main #first-section > div h4 {
+  main #home > div h4 {
     scroll-margin-top: 100px;
     width: 80%;
     line-height: 1.5rem;
@@ -685,33 +685,33 @@ html {
     letter-spacing: 1px;
     text-align: justify;
   }
-  main #first-section > div p {
+  main #home > div p {
     margin-top: 2rem;
   }
-  main #first-section > div p a {
+  main #home > div p a {
     display: inline-block;
     padding: 10px 20px;
     color: #472915;
     border: 1px solid #472915;
     transition: all 0.6s;
   }
-  main #first-section > div p a:hover {
+  main #home > div p a:hover {
     background-color: #472915;
     color: wheat;
   }
-  main #first-section > div > div {
+  main #home > div > div {
     margin-top: 2rem;
   }
-  main #first-section > div > div h3 {
+  main #home > div > div h3 {
     color: #472915;
   }
-  main #first-section > div > div audio {
+  main #home > div > div audio {
     margin-top: 1rem;
     border: 1px solid #472915;
     border-radius: 100px;
     box-shadow: 0 0 5px #472915;
   }
-  main #research-blog {
+  main #aboutMe {
     scroll-margin-top: 70px;
     background-color: #f2ede9;
     display: flex;
@@ -719,17 +719,17 @@ html {
     align-items: center;
     padding: 2rem 1rem;
   }
-  main #research-blog h1 {
+  main #aboutMe h1 {
     width: 50%;
     text-align: center;
     font-size: 5rem;
     color: #472915;
     font-weight: lighter;
   }
-  main #research-blog > div {
+  main #aboutMe > div {
     width: 50%;
   }
-  main #research-blog > div h4 {
+  main #aboutMe > div h4 {
     scroll-margin-top: 80px;
     width: 70%;
     font-weight: normal;
@@ -737,7 +737,7 @@ html {
     color: #464443;
     text-align: justify;
   }
-  main #research-blog > div a {
+  main #aboutMe > div a {
     display: inline-block;
     padding: 10px 25px;
     margin-top: 2rem;
@@ -746,34 +746,34 @@ html {
     border: 1px solid #472915;
     transition: all 0.6s;
   }
-  main #research-blog > div a:hover {
+  main #aboutMe > div a:hover {
     background-color: #472915;
     color: white;
   }
-  main #publications {
+  main #projects {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem 1rem;
     scroll-margin-top: 70px;
   }
-  main #publications h1 {
+  main #projects h1 {
     width: 50%;
     text-align: center;
     font-size: 5rem;
     color: #472915;
     font-weight: lighter;
   }
-  main #publications > div {
+  main #projects > div {
     width: 50%;
   }
-  main #publications > div p {
+  main #projects > div p {
     line-height: 2rem;
     color: #464443;
     margin-top: 5rem;
     font-size: 1.5rem;
   }
-  main #publications > div a {
+  main #projects > div a {
     display: inline-block;
     padding: 10px 25px;
     margin-top: 5rem;
@@ -782,7 +782,7 @@ html {
     border: 1px solid #472915;
     transition: all 0.6s;
   }
-  main #publications > div a:hover {
+  main #projects > div a:hover {
     background-color: #472915;
     color: white;
   }
@@ -823,19 +823,19 @@ html {
     font-size: 1.5rem;
     color: white;
   }
-  main #first-section {
+  main #home {
     margin-top: 1rem;
     padding: 1rem;
   }
-  main #first-section img {
+  main #home img {
     width: 100%;
     box-shadow: 0 0 10px #472915;
   }
-  main #first-section > div {
+  main #home > div {
     width: 100%;
     margin-top: 1rem;
   }
-  main #first-section > div h4 {
+  main #home > div h4 {
     scroll-margin-top: 100px;
     width: 100%;
     line-height: 1.5rem;
@@ -843,25 +843,25 @@ html {
     letter-spacing: 1px;
     text-align: justify;
   }
-  main #first-section > div p {
+  main #home > div p {
     margin-top: 2rem;
     text-align: center;
   }
-  main #first-section > div p a {
+  main #home > div p a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #472915;
     color: wheat;
     transition: all 0.6s;
   }
-  main #first-section > div > div {
+  main #home > div > div {
     text-align: center;
     margin-top: 2rem;
   }
-  main #first-section > div > div h3 {
+  main #home > div > div h3 {
     color: #472915;
   }
-  main #first-section > div > div audio {
+  main #home > div > div audio {
     width: 90%;
     margin: auto;
     margin-top: 1rem;
@@ -869,23 +869,23 @@ html {
     border-radius: 100px;
     box-shadow: 0 0 5px #472915;
   }
-  main #research-blog {
+  main #aboutMe {
     background-color: #f2ede9;
     padding: 2rem 1rem;
     scroll-margin-top: 70px;
   }
-  main #research-blog h1 {
+  main #aboutMe h1 {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
     color: #472915;
     font-weight: bold;
   }
-  main #research-blog > div {
+  main #aboutMe > div {
     width: 100%;
     text-align: center;
   }
-  main #research-blog > div h4 {
+  main #aboutMe > div h4 {
     scroll-margin-top: 80px;
     margin-top: 1rem;
     width: 100%;
@@ -894,7 +894,7 @@ html {
     color: #464443;
     text-align: justify;
   }
-  main #research-blog > div a {
+  main #aboutMe > div a {
     display: inline-block;
     padding: 10px 25px;
     margin-top: 2rem;
@@ -903,33 +903,33 @@ html {
     border: 1px solid #472915;
     transition: all 0.6s;
   }
-  main #research-blog > div a:hover {
+  main #aboutMe > div a:hover {
     background-color: #472915;
     color: white;
   }
-  main #publications {
+  main #projects {
     padding: 1rem;
     scroll-margin-top: 70px;
   }
-  main #publications h1 {
+  main #projects h1 {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
     color: #472915;
     font-weight: bold;
   }
-  main #publications > div {
+  main #projects > div {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
   }
-  main #publications > div p {
+  main #projects > div p {
     line-height: 1.5rem;
     color: #464443;
     margin-top: 1rem;
     font-size: 1.2rem;
   }
-  main #publications > div a {
+  main #projects > div a {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 2rem;
