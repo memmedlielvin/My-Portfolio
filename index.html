@@ -47,7 +47,7 @@
         <div><i class="fa-solid fa-xmark" onClick=closeNavBar();></i></div>
 
         <ul>
-            <li><a href="index.html">Əsas Səhifə</a></li>
+            <li><a onclick="closeNavBarForChange();" href="#background-img-section">Əsas Səhifə</a></li>
             <li><a onclick="closeNavBarForChange();" href="#aboutMe">Haqqımda</a></li>
             
             <li><a onclick="closeNavBarForChange();" href="#projects">Layihələr</a></li>
@@ -60,7 +60,7 @@
     <header id="head-for-pc">
         <h1><a href="index.html">Məmmədli Elvin</a></h1>
         <ul>
-            <li><a href="index.html">Əsas Səhifə</a></li>
+            <li><a href="#background-img-section">Əsas Səhifə</a></li>
             <li><a href="#aboutMe">Haqqımda</a></li>
             
             <li><a href="#projects">Layihələr</a></li>
@@ -87,12 +87,12 @@
         </div>
     </section>
     <section id="home">
-        <img src="img/profile-picture.jpeg" alt="image">
+        <img src="img/profil-picture3.jpg" alt="myImg">
 
         <div>
                 
             <h4 id="about">
-                Mən Məmmədli Elvin. Front-end Developer. 30 yaşım var. Bakı şəhəri anadan olmuşam. Subayam. Hərbi xitmətdə olmuşam.  
+                Məmmədli Elvin. Front-end Developer. 30 yaş. Bakı şəhəri. Xətai ray, Xətai m/s A.ismayılov 35C
             </h4>
 
             <p class="about"><a href="#aboutMe">Learn More</a></p>
@@ -123,7 +123,7 @@
         <h4 >
 
 
-            Mən Məmmədli Elvin 14 May 1992-ci ildə Bakı şəhərində anadan olmuşam. Suraxanı rayonu Qaraçuxur qəsəbəsində 104 saylı orta məktəbi bitirmişəm. 2009-cu ildə Bakı Dövlət Universiteti  (<abbr title="Bakı Dövlət Universiteti">BDU</abbr>) - nə daxil olmuşam. Ekologiya və Torpaqşunaslıq fakülətsini bitirmişəm. İxtisasım Yer quruluşu, torpaq və şəhər kadastrıdır<br><br> ​ 2016 ci il Yanvar-ayında hərbi ximətdən qayıtmışam. 2016-2022-ci ilə Sentyabr ayına qədər 1001 Əmlak Şirkətində Rieltor (Vasitəçi) olaraq işləmişəm. Oktyabr ayında Developia Şirkətində Front-End proqramlaşdırma kurslarına yazılmışam. Hal-hazırda Kursum davam edir. Html, Css, Bootstrap, Sass, Javascript proq-ramlaşdırma dillərini bilirəm. Git və Github-la işləyə bilirəm. 
+            Mən Məmmədli Elvin 14 May 1992-ci ildə Bakı şəhərində anadan olmuşam. Suraxanı rayonu Qaraçuxur qəsəbəsində 104 saylı orta məktəbi bitirmişəm. 2009-cu ildə Bakı Dövlət Universiteti  (<abbr title="Bakı Dövlət Universiteti">BDU</abbr>) - nə daxil olmuşam. Ekologiya və Torpaqşunaslıq fakülətsini bitirmişəm. İxtisasım Yer quruluşu, torpaq və şəhər kadastrıdır<br><br> ​ 2016 ci il Yanvar-ayında hərbi ximətdən qayıtmışam. 2016-2022-ci ilə Sentyabr ayına qədər 1001 Əmlak Şirkətində Rieltor (Vasitəçi) olaraq işləmişəm. Oktyabr ayında Developia Şirkətində Front-End proqramlaşdırma kurslarına yazılmışam. Hal-hazırda Kursum davam edir. Html, Css, Bootstrap, Sass, Javascript proqramlaşdırma dillərini bilirəm. 
 
         </h4>
 
@@ -137,14 +137,33 @@
 
 <section id="projects">
 
-    <h1>Publications</h1>
+    <h1>Layihələr</h1>
 
     <div>
-       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
-       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
-       <p>Elik Mamed "This is your publication title. Click to <br> edit", Accepted, Institute or journal title (2035)</p>
+       <h3>Github adress<br>
+        <a href="https://github.com/memmedlielvin" target="_blank">https://github.com/memmedlielvin</a>
+    </h3>
+       <h3>Netlify adress <br> 
+        <a href="https://app.netlify.com/teams/memmedli-elvin/overview" target="_blank">https://app.netlify.com/teams/memmedli-elvin/overview</a>
+    </h3>
 
-        <a href="#learn-more">View all publications</a>
+       <h5>Projects</h5>
+       <p>
+        <a href="https://elikresidentialremodeling.netlify.app/" target="_blank">Elik Residential Remodeling</a><br>
+        <a href="https://hare-care.netlify.app/" target="_blank">Hare Care</a><br>
+       <a href="https://elikdesign.netlify.app/" target="_blank">Elik Design</a>
+    </p>
+
+       <p id="hiddenProject">
+        <a href="https://hare-care.netlify.app/" target="_blank">Hare Care</a><br>
+        <a href="https://buycar.netlify.app/" target="_blank">Buy Car</a><br>
+        <a href="https://elikmamedfrd.netlify.app/" target="_blank">Elik Mamed FrD</a><br>
+    </p>
+
+
+
+        <button onclick="ShowHiddenProjecst();">View all projects</button>
+        
     
     </div>
 </section>
@@ -155,13 +174,13 @@
     <footer id="contact">
 
         <div>
-            <h1>Contact Information</h1>
-            <h3>Elik Company</h3>
-            <h5>500 Terry Francois St. <br>San Francisco, CA 94158</h5>
+            <h1>Əlaqə məlumatları</h1>
+            <h3>Məmmədli Elvin</h3>
+            <h5>Xətai ray. Xətai m/st<br>Ayaz İsmayılov küç 35C</h5>
 
             <h5>
                 <a href="tel:+994506474653">+994506474653</a><br>
-                <a href="mailto:info@elik.com">info@elik.com</a>
+                <a href="mailto:memmedlielvin029@gmail.com">memmedlielvin029@gmail.com</a>
             </h5>
             <p >
                 <a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -177,30 +196,30 @@
             <form action="#" method="post" autocomplete="off">
                 <div>
                     <p>
-                        <label for="first-name">First Name <span style="color: red;"> *</span></label><br>
+                        <label for="first-name">Ad <span style="color: red;"> *</span></label><br>
                         <input type="text" name="first-name" id="first-name" required>
                     </p>
                     <p>
-                        <label for="last-name">Last Name</label><br>
+                        <label for="last-name">Soyad</label><br>
                         <input type="text" name="last-name" id="last-name" >
                     </p>
                 </div>
 
 
                 <div>
-                    <p><label for="email"e>E-mail <span style="color: red;"> *</span></label><br>
+                    <p><label for="email"e>E-mail</span></label><br>
                         <input type="email" name="email" id="email" required></p>
                     <p><label for="tel">Tel: <span style="color: red;"> *</span></label><br>
                         <input type="tel" name="tel" id="tel" required></p>
                 </div>
 
                 <div id="textarea-container">
-                    <label for="textarea">Leave a message</label><br>
+                    <label for="textarea">Bizə yazın</label><br>
                         <textarea id="textarea" ></textarea>
                 </div>
 
                 <div>
-                    <input type="submit" name="submit" id="submit" value="Submit">
+                    <input type="submit" name="submit" id="submit" value="Göndər">
                 </div>
 
 

@@ -1,9 +1,5 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   main {
-    #head-for-pc {
-      display: none;
-    }
-
     #head-for-mobil {
       width: 100%;
       height: 70px;
@@ -17,6 +13,7 @@
       top: 0;
       left: 0;
       z-index: 4;
+      display: none;
       a {
         font-size: 1.5rem;
         color: wheat;
@@ -77,69 +74,122 @@
         }
       }
     }
+    #head-for-pc {
+      width: 100%;
+      height: 70px;
 
+      background-color: #472915;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+      h1 {
+        margin-left: 2rem;
+        a {
+          display: block;
+          color: wheat;
+        }
+      }
+
+      ul {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        li {
+          a {
+            display: block;
+            color: wheat;
+            transition: all 0.6s;
+            line-height: 70px;
+            padding: 0 2.5rem;
+            &:hover {
+              background-color: #5c2f11;
+              color: white;
+            }
+          }
+        }
+      }
+    }
     footer {
       width: 100%;
       background-color: #472915;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       padding: 1rem;
 
       & > div {
-        width: 100%;
-        order: 2;
+        width: 60%;
+
         padding: 1rem;
 
         & > h1 {
           color: wheat;
 
-          font-size: 1.5rem;
+          font-size: 2.5rem;
           margin-top: 1rem;
         }
 
         & > h3 {
           color: wheat;
 
-          font-size: 1.3rem;
-          margin-top: 0.5rem;
+          font-size: 1.8rem;
+
+          margin-top: 2rem;
         }
 
         & > h5 {
-          margin-top: 1rem;
+          margin-top: 2rem;
+          font-size: 1.2rem;
+          font-weight: normal;
 
           color: wheat;
           a {
             color: wheat;
+            font-size: 1.5rem;
           }
         }
 
         p {
           margin-top: 2rem;
-          text-align: center;
+
           a {
             font-size: 1.5rem;
             color: wheat;
             display: inline-block;
-            margin-right: 1rem;
+            margin-right: 2rem;
+            transition: all 0.6s;
+            &:hover {
+              color: white;
+              text-shadow: 0 0 5px white;
+            }
           }
         }
       }
 
       form {
-        width: 100%;
-        order: 1;
+        width: 30%;
+
         background-color: #472915;
 
         padding: 1rem;
         & > div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           margin-top: 1rem;
           & > p {
-            margin-top: 1rem;
+            width: 48%;
             label {
               color: wheat;
             }
-            input,
-            textarea {
+            input {
               width: 100%;
               padding: 10px;
               outline: none;
@@ -155,27 +205,25 @@
                 background-color: rgba(155, 118, 93, 0.2);
               }
             }
-
-            #textarea {
-              width: 100%;
-              height: 100px;
-              background-color: rgba(155, 118, 93, 0.2);
-
-              resize: none;
-              word-wrap: break-word;
-              overflow-y: auto;
-            }
           }
 
           #submit {
             width: 100%;
 
-            background-color: rgba(155, 118, 93);
+            background-color: transparent;
             color: wheat;
             border: 1px solid wheat;
             padding: 10px 0;
+            transition: all 0.6s;
+            &:hover {
+              cursor: pointer;
+              background-color: wheat;
+              border: 1px solid wheat;
+              color: #472915;
+            }
           }
         }
+
         #textarea-container {
           width: 100%;
           display: flex;
@@ -210,7 +258,6 @@
     }
   }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   main {
     #head-for-mobil {
@@ -450,8 +497,12 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
   main {
+    #head-for-pc {
+      display: none;
+    }
+
     #head-for-mobil {
       width: 100%;
       height: 70px;
@@ -465,7 +516,6 @@
       top: 0;
       left: 0;
       z-index: 4;
-      display: none;
       a {
         font-size: 1.5rem;
         color: wheat;
@@ -526,120 +576,69 @@
         }
       }
     }
-    #head-for-pc {
-      width: 100%;
-      height: 70px;
 
-      background-color: #472915;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 4;
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-      h1 {
-        margin-left: 2rem;
-        a {
-          display: block;
-          color: wheat;
-        }
-      }
-
-      ul {
-        width: 50%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        li {
-          a {
-            display: block;
-            color: wheat;
-            transition: all 0.6s;
-            line-height: 70px;
-            padding: 0 2.5rem;
-            &:hover {
-              background-color: #5c2f11;
-              color: white;
-            }
-          }
-        }
-      }
-    }
     footer {
       width: 100%;
       background-color: #472915;
       display: flex;
-      justify-content: center;
-      align-items: center;
-
+      flex-direction: column;
       padding: 1rem;
 
       & > div {
-        width: 60%;
-
+        width: 100%;
+        order: 2;
         padding: 1rem;
 
         & > h1 {
           color: wheat;
 
-          font-size: 3rem;
+          font-size: 1.5rem;
           margin-top: 1rem;
         }
 
         & > h3 {
           color: wheat;
 
-          font-size: 2rem;
+          font-size: 1.3rem;
           margin-top: 0.5rem;
         }
 
         & > h5 {
           margin-top: 1rem;
-          font-size: 1.5rem;
 
           color: wheat;
           a {
             color: wheat;
-            font-size: 1.5rem;
           }
         }
 
         p {
           margin-top: 2rem;
-
+          text-align: center;
           a {
             font-size: 1.5rem;
             color: wheat;
             display: inline-block;
-            margin-right: 2rem;
-            transition: all 0.6s;
-            &:hover {
-              color: white;
-              text-shadow: 0 0 5px white;
-            }
+            margin-right: 1rem;
           }
         }
       }
 
       form {
-        width: 30%;
-
+        width: 100%;
+        order: 1;
         background-color: #472915;
 
         padding: 1rem;
         & > div {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
           margin-top: 1rem;
           & > p {
-            width: 48%;
+            margin-top: 1rem;
             label {
               color: wheat;
             }
-            input {
+            input,
+            textarea {
               width: 100%;
               padding: 10px;
               outline: none;
@@ -655,25 +654,27 @@
                 background-color: rgba(155, 118, 93, 0.2);
               }
             }
+
+            #textarea {
+              width: 100%;
+              height: 100px;
+              background-color: rgba(155, 118, 93, 0.2);
+
+              resize: none;
+              word-wrap: break-word;
+              overflow-y: auto;
+            }
           }
 
           #submit {
             width: 100%;
 
-            background-color: transparent;
+            background-color: rgba(155, 118, 93);
             color: wheat;
             border: 1px solid wheat;
             padding: 10px 0;
-            transition: all 0.6s;
-            &:hover {
-              cursor: pointer;
-              background-color: wheat;
-              border: 1px solid wheat;
-              color: #472915;
-            }
           }
         }
-
         #textarea-container {
           width: 100%;
           display: flex;

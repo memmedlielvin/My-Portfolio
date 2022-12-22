@@ -9,3 +9,7 @@ function openNavBar() {
 function closeNavBar() {
   document.querySelector("#nav-for-mobil").style.height = "0";
 }
+
+function ShowHiddenProjecst() {
+  document.getElementById("hiddenProject").style.display = "block";
+}
