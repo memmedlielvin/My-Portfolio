@@ -624,7 +624,193 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
+  main #background-img-section {
+    height: 300px;
+    margin-top: 70px;
+    background-image: url("../img/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    scroll-margin-top: 70px;
+  }
+  main #background-img-section > div {
+    width: 40%;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+  }
+  main #background-img-section > div h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  main #background-img-section > div h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+  }
+  main #background-img-section > div h3 {
+    margin-top: 1rem;
+  }
+  main #background-img-section > div h3 a {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 1rem;
+  }
+  main #home {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding: 1rem;
+    position: relative;
+  }
+  main #home img {
+    width: 400px;
+    border-radius: 2px;
+    position: absolute;
+    top: -200px;
+    left: 10%;
+    box-shadow: 0 0 20px #472915;
+  }
+  main #home > div {
+    width: 40%;
+    margin-right: 5rem;
+  }
+  main #home > div h4 {
+    scroll-margin-top: 100px;
+    width: 80%;
+    line-height: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+  main #home > div p {
+    margin-top: 2rem;
+  }
+  main #home > div p a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #472915;
+    border: 1px solid #472915;
+    transition: all 0.6s;
+  }
+  main #home > div p a:hover {
+    background-color: #472915;
+    color: wheat;
+  }
+  main #home > div > div {
+    margin-top: 5rem;
+  }
+  main #home > div > div h3 {
+    color: #472915;
+  }
+  main #home > div > div audio {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #472915;
+    border-radius: 100px;
+    box-shadow: 0 0 5px #472915;
+  }
+  main #aboutMe {
+    scroll-margin-top: 70px;
+    background-color: #f2ede9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  main #aboutMe h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 5rem;
+    color: #472915;
+    font-weight: lighter;
+  }
+  main #aboutMe > div {
+    width: 50%;
+  }
+  main #aboutMe > div h4 {
+    scroll-margin-top: 80px;
+    width: 70%;
+    font-weight: normal;
+    line-height: 2rem;
+    color: #464443;
+  }
+  main #aboutMe > div a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 2rem;
+    color: #472915;
+    background-color: transparent;
+    border: 1px solid #472915;
+    transition: all 0.6s;
+  }
+  main #aboutMe > div a:hover {
+    background-color: #472915;
+    color: white;
+  }
+  main #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    scroll-margin-top: 70px;
+  }
+  main #projects h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 5rem;
+    color: #472915;
+    font-weight: lighter;
+  }
+  main #projects > div {
+    width: 50%;
+  }
+  main #projects > div h3 {
+    font-size: 2rem;
+    color: #472915;
+    margin-bottom: 1rem;
+  }
+  main #projects > div h3 a {
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #464443;
+  }
+  main #projects > div h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #472915;
+  }
+  main #projects > div p a {
+    color: #464443;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  main #projects > div #hiddenProject {
+    display: none;
+  }
+  main #projects > div button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 3rem;
+    color: #472915;
+    background-color: transparent;
+    border: 1px solid #472915;
+    transition: all 0.6s;
+  }
+  main #projects > div button:hover {
+    background-color: #472915;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   main #background-img-section {
     height: 300px;
     margin-top: 70px;
@@ -860,12 +1046,9 @@ html {
     margin-top: 1rem;
   }
   main #home > div h4 {
-    scroll-margin-top: 100px;
-    width: 100%;
+    margin: auto;
     line-height: 1.5rem;
     font-weight: normal;
-    letter-spacing: 1px;
-    text-align: justify;
   }
   main #home > div p {
     margin-top: 2rem;
@@ -876,7 +1059,6 @@ html {
     padding: 10px 20px;
     background-color: #472915;
     color: wheat;
-    transition: all 0.6s;
   }
   main #home > div > div {
     text-align: center;
@@ -907,16 +1089,12 @@ html {
   }
   main #aboutMe > div {
     width: 100%;
-    text-align: center;
   }
   main #aboutMe > div h4 {
-    scroll-margin-top: 80px;
-    margin-top: 1rem;
-    width: 100%;
+    margin-top: 2rem;
     font-weight: normal;
     line-height: 1.5rem;
     color: #464443;
-    text-align: justify;
   }
   main #aboutMe > div a {
     display: inline-block;
@@ -932,10 +1110,10 @@ html {
     color: white;
   }
   main #projects {
-    padding: 1rem;
+    padding: 2rem 1rem;
     scroll-margin-top: 70px;
   }
-  main #projects h1 {
+  main #projects > h1 {
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
@@ -944,21 +1122,42 @@ html {
   }
   main #projects > div {
     width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  main #projects > div p {
-    line-height: 1.5rem;
-    color: #464443;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-  main #projects > div a {
-    display: inline-block;
-    padding: 10px 20px;
     margin-top: 2rem;
-    background-color: #472915;
+  }
+  main #projects > div h3 {
+    font-size: 1.5rem;
+    color: #472915;
+    margin-bottom: 1rem;
+  }
+  main #projects > div h3 a {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: inline-block;
+    color: #464443;
+  }
+  main #projects > div h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #472915;
+  }
+  main #projects > div p a {
+    color: #464443;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  main #projects > div #hiddenProject {
+    display: none;
+  }
+  main #projects > div button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 2rem;
     color: white;
+    background-color: #472915;
+    border: none;
   }
   main #contact {
     scroll-margin-top: 70px;
