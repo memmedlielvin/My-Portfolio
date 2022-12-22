@@ -220,7 +220,7 @@ html {
   }
 }
 
-@media screen and (min-width: 768px) and(max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     #background-img-section {
       height: 300px;
@@ -240,17 +240,17 @@ html {
         margin-right: 5rem;
         margin-bottom: 1rem;
         h1 {
-          font-size: 3rem;
+          font-size: 2rem;
           color: white;
         }
         h2 {
           margin-top: 1rem;
-          font-size: 2rem;
+          font-size: 1.5rem;
           font-weight: bolder;
           color: white;
         }
         h3 {
-          margin-top: 1rem;
+          margin-top: 1.2rem;
           a {
             font-size: 1.5rem;
             color: white;
@@ -268,11 +268,11 @@ html {
       position: relative;
 
       img {
-        width: 400px;
+        width: 300px;
         border-radius: 2px;
         position: absolute;
-        top: -200px;
-        left: 10%;
+        top: -150px;
+        left: 5%;
         box-shadow: 0 0 20px #472915;
       }
       & > div {
@@ -280,13 +280,13 @@ html {
         margin-right: 5rem;
         h4 {
           scroll-margin-top: 100px;
-          width: 80%;
+
           line-height: 1.5rem;
           font-weight: normal;
           letter-spacing: 1px;
         }
         p {
-          margin-top: 2rem;
+          margin-top: 1.5rem;
           a {
             display: inline-block;
             padding: 10px 20px;
@@ -301,13 +301,13 @@ html {
         }
 
         & > div {
-          margin-top: 5rem;
+          margin-top: 2rem;
           h3 {
             color: #472915;
           }
           audio {
             margin-top: 1rem;
-            margin-bottom: 2rem;
+
             border: 1px solid #472915;
             border-radius: 100px;
             box-shadow: 0 0 5px #472915;
